@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<script type="text/javascript">
+  var s = "The quick brown fox jumps over the lazy dog"
+
+//function to count number of vowels in a string
+function countVowels(s) {
+  //regex to get vowels
+  var c = s.match(/[aeiou]/gi);
+  return c === null ? 0 : c.length;
+}
+
+//call countVowels function
+alert(countVowels(s))
+
+</script>
+</body>
+</html>
